@@ -1,0 +1,56 @@
+[
+  {
+    "source": "^I click on football$",
+    "steps": [
+      {
+        "name": "I click on football",
+        "aggregatedDurations": {
+          "average": 0.12664517,
+          "median": 0.12664517
+        },
+        "durations": [
+          {
+            "duration": 0.12664517,
+            "location": "PlaceBet.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^William logo is displayed$",
+    "steps": [
+      {
+        "name": "William logo is displayed",
+        "aggregatedDurations": {
+          "average": 0.150041506,
+          "median": 0.150041506
+        },
+        "durations": [
+          {
+            "duration": 0.150041506,
+            "location": "PlaceBet.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I navigate to WilliamHill home page$",
+    "steps": [
+      {
+        "name": "I navigate to WilliamHill home page",
+        "aggregatedDurations": {
+          "average": 8.349508532,
+          "median": 8.349508532
+        },
+        "durations": [
+          {
+            "duration": 8.349508532,
+            "location": "PlaceBet.feature:6"
+          }
+        ]
+      }
+    ]
+  }
+]

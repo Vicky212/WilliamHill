@@ -1,0 +1,55 @@
+Feature: Place Bet
+  		As a WilliamHill Customer
+  		I want the ability to place bet on an English Premier League event
+
+  Scenario Outline: Place a bet on English Premier Football League event [90m# PlaceBet.feature:5[0m
+    [36mGiven [0m[36mI navigate to WilliamHill home page[0m
+    [36mAnd [0m[36mWilliam logo is displayed[0m
+    [36mAnd [0m[36mI click on football[0m
+    [36mWhen [0m[36mI click on odd for the home team to Win[0m
+    [36mThen [0m[36mbetting slip content displayed[0m
+    [36mAnd [0m[36mI enter betting value "<Betting Value>"[0m
+    [36mThen [0m[36mthe returns offered on the bet displayed[0m
+    [36mAnd [0m[36mbetting  odds is displayed[0m
+    [36mAnd [0m[36mI place the bet[0m
+
+    Scenarios: 
+
+  Scenario Outline: Place a bet on English Premier Football League event [90m# PlaceBet.feature:18[0m
+    [32mGiven [0m[32mI navigate to WilliamHill home page[0m                            [90m# WilliamHillAcceptanceTest.i_navigate_to_WilliamHill_home_page()[0m
+    [32mAnd [0m[32mWilliam logo is displayed[0m                                        [90m# WilliamHillAcceptanceTest.william_logo_is_displayed()[0m
+    [32mAnd [0m[32mI click on football[0m                                              [90m# WilliamHillAcceptanceTest.i_click_on_football()[0m
+    [31mWhen [0m[31mI click on odd for the home team to Win[0m                         [90m# WilliamHillAcceptanceTest.i_click_on_odd_for_the_home_team_to_Win()[0m
+      [31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"OB_OU1508754302"}
+        (Session info: chrome=56.0.2924.87)
+        (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+      Command duration or timeout: 30 milliseconds
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.0.0-beta4', revision: '3169782', time: '2016-09-29 10:29:23 -0700'
+      System info: host: 'DESKTOP-NMCOJ8P', ip: '192.168.0.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\User\AppData\Local\Temp\scoped_dir95644_20534}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+      Session ID: 9b93073b73b8b63c26cc88e574ba7275
+      *** Element info: {Using=id, value=OB_OU1508754302}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+      	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+      	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+      	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:636)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:369)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:418)
+      	at org.openqa.selenium.By$ById.findElement(By.java:218)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+      	at com.williamhill.base.WilliamhillHelper.getElement(WilliamhillHelper.java:107)
+      	at com.williamhill.base.WilliamhillHelper.getElementById(WilliamhillHelper.java:74)
+      	at com.williamhill.pages.WilliamHillFootballListingPage.AndIClickOnOddForHomeTeamToWin(WilliamHillFootballListingPage.java:21)
+      	at stepDefinition.WilliamHillAcceptanceTest.i_click_on_odd_for_the_home_team_to_Win(WilliamHillAcceptanceTest.java:40)
+      	at ✽.When I click on odd for the home team to Win(PlaceBet.feature:9)
+      [0m
+    [36mThen [0m[36mbetting slip content displayed[0m                                  [90m# WilliamHillAcceptanceTest.betting_slip_content_displayed()[0m
+    [36mAnd [0m[36mI enter betting value "[0m[36m[1m0.05[0m[36m"[0m                                     [90m# WilliamHillAcceptanceTest.i_enter_betting_value(String)[0m
+    [36mThen [0m[36mthe returns offered on the bet displayed[0m                        [90m# WilliamHillAcceptanceTest.the_returns_offered_on_the_bet_displayed()[0m
+    [36mAnd [0m[36mbetting  odds is displayed[0m                                       [90m# WilliamHillAcceptanceTest.betting_odds_is_displayed()[0m
+    [36mAnd [0m[36mI place the bet[0m                                                  [90m# WilliamHillAcceptanceTest.i_place_the_bet()[0m
